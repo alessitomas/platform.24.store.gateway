@@ -1,1 +1,1 @@
-# platform.241.store.gateway
+# platform.24.store.gateway

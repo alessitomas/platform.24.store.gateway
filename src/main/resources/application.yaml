@@ -18,10 +18,15 @@ spring:
           predicates:
             - Path=/accounts/**
 
+        - id: store-job
+          uri: lb://store-job
+          predicates:
+            - Path=/jobs/**
+
         - id: insper
           uri: https://www.insper.edu.br
           predicates:
-            - Path=/
+            - Path=/insper/**
 
 management:
   endpoints:
@@ -43,4 +48,5 @@ api:
       POST /auth/register,
       POST /auth/login,
       ANY /auth/actuator,
-      ANY /accounts/actuator
+      ANY /accounts/actuator,
+      ANY /jobs/actuator

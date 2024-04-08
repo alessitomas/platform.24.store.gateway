@@ -26,7 +26,7 @@ spring:
         - id: store-inscricao
           uri: lb://store-inscricao
           predicates:
-            - Path=/inscricaos/**
+            - Path=/inscricoes/**
 
         - id: insper
           uri: https://www.insper.edu.br
@@ -55,4 +55,4 @@ api:
       ANY /auth/actuator,
       ANY /accounts/actuator,
       ANY /jobs/actuator,
-      ANY /inscricaos/actuator,
+      ANY /inscricoes/actuator,

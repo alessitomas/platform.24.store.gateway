@@ -23,6 +23,11 @@ spring:
           predicates:
             - Path=/jobs/**
 
+        - id: store-inscricao
+          uri: lb://store-inscricao
+          predicates:
+            - Path=/inscricaos/**
+
         - id: insper
           uri: https://www.insper.edu.br
           predicates:
@@ -49,4 +54,5 @@ api:
       POST /auth/login,
       ANY /auth/actuator,
       ANY /accounts/actuator,
-      ANY /jobs/actuator
+      ANY /jobs/actuator,
+      ANY /inscricaos/actuator,

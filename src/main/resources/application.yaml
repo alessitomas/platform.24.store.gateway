@@ -56,3 +56,7 @@ api:
       ANY /accounts/actuator,
       ANY /jobs/actuator,
       ANY /inscricoes/actuator,
+      ANY /accounts/**,
+      ANY /jobs/**,
+      ANY /inscricoes/**,
+      ANY /auth/**
